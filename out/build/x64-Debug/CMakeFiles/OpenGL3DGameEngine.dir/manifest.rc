@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/CMakeFiles/OpenGL3DGameEngine.dir/embed.manifest"

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/glfw_build/cmake_install.cmake",
+		"C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/glfw_build/src/cmake_install.cmake",
+		"C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/glfw_build/docs/cmake_install.cmake",
+		"C:/Users/hadma/Desktop/git/OpenGL-3D-Game-Engine/out/build/x64-Debug/glew_build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
