@@ -99,6 +99,20 @@ int main()
 		0.5f,-0.5f,0.0f,1.0f,1.0f,0.0f
 	};
 
+	std::vector<unsigned int> indices
+	{
+		0,1,2,
+		0,2,3
+	};
+
+	GLuint ebo;
+	glGenBuffers(1, &ebo);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,ebo);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
+
+
 	GLuint vbo;
 	glGenBuffers(1,&vbo);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
