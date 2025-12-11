@@ -137,14 +137,15 @@ int main()
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
 
-	glGetUniformLocation(shaderProgram);
+	GLint uColorLoc =glGetUniformLocation(shaderProgram,"uColor");
 	
 	while(!glfwWindowShouldClose(window))
 	{
 		glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		glUseProgram(shaderProgram,);
+		glUseProgram(shaderProgram);
+		glUniform4f(uColorLoc, 0.0f, 1.f, 0.0f, 1.0f);
 		glBindVertexArray(vao);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
