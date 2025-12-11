@@ -55,11 +55,13 @@ int main()
 	std::string fragmentShaderSource = R"(
      #version 330 core
      out vec4 FragColor;
+
      in vec3 vColor;
+     uniform vec4 uColor;
 
      void main()
 {      
-       FragColor = vec4(vColor,1.0);
+       FragColor = vec4(vColor,1.0)* uColor;
 }
 
 )";
@@ -135,13 +137,14 @@ int main()
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
 
+	glGetUniformLocation(shaderProgram);
 	
 	while(!glfwWindowShouldClose(window))
 	{
 		glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		glUseProgram(shaderProgram);
+		glUseProgram(shaderProgram,);
 		glBindVertexArray(vao);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
